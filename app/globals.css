@@ -43,3 +43,11 @@
 .brand-mark{display:block;flex:0 0 112px;width:112px;height:112px;overflow:visible}
 .brand-mark img{position:static;display:block;width:100%;height:100%;max-width:none;object-fit:contain}
 @media(max-width:620px){.site-header{height:100px}.brand-mark{flex-basis:80px;width:80px;height:80px}}
+
+/* Replace decorative copy with verified Keppler terminology; visual treatment is unchanged. */
+.language-section:after{content:"KEPPLER OCR"}
+.language-section .language-core:before{content:"MIXED-LANGUAGE PAGES"}
+.language-section .orbit:before{content:"LANGUAGE SUPPORT"}
+.contact .contact-form:after{content:"KEPPLER OCR"}
+.intro:after,.industries:after{content:"KEPPLER OCR"}
+.language-visual:before{content:"SUPPORTED LANGUAGES"}
