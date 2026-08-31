@@ -56,6 +56,9 @@ export default function Home() {
 
       <section className="section language-section" id="languages">
         <div className="language-visual">
+          <span className="atlas-title">LINGUISTIC ATLAS · PLATE VII</span>
+          <span className="atlas-note note-a">scripts observed<br/>on one page</span>
+          <span className="atlas-note note-b">index &amp; cross-reference</span>
           <div className="orbit orbit-one">हिन्दी</div><div className="orbit orbit-two">తెలుగు</div><div className="orbit orbit-three">தமிழ்</div>
           <div className="language-core"><small>ONE PAGE</small><b>Any script.</b><span>Mixed-language<br/>ready</span></div>
           <div className="orbit orbit-four">বাংলা</div><div className="orbit orbit-five">العربية</div><div className="orbit orbit-six">English</div>
