@@ -31,3 +31,8 @@
 .language-section .orbit-five{top:69%;left:16%}
 .language-section .orbit-six{top:31%;left:16%}
 @media(max-width:620px){.language-section .orbit{width:86px;min-width:86px;min-height:46px;padding:6px 7px;font-size:11px}.language-section .orbit-one{top:12%;left:50%}.language-section .orbit-two{top:31%;left:84%}.language-section .orbit-three{top:69%;left:84%}.language-section .orbit-four{top:88%;left:50%}.language-section .orbit-five{top:69%;left:16%}.language-section .orbit-six{top:31%;left:16%}}
+
+/* Tighten the transition from the case-study cards into deployment options. */
+.industries{padding-bottom:62px}
+.deployment{padding-top:62px}
+@media(max-width:620px){.industries{padding-bottom:48px}.deployment{padding-top:48px}}
