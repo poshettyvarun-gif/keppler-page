@@ -36,3 +36,10 @@
 .industries{padding-bottom:62px}
 .deployment{padding-top:62px}
 @media(max-width:620px){.industries{padding-bottom:48px}.deployment{padding-top:48px}}
+
+/* Preserve the supplied Keppler logo as one complete, unaltered image. */
+.site-header{height:132px}
+.brand{gap:0;font-size:0}
+.brand-mark{display:block;flex:0 0 112px;width:112px;height:112px;overflow:visible}
+.brand-mark img{position:static;display:block;width:100%;height:100%;max-width:none;object-fit:contain}
+@media(max-width:620px){.site-header{height:100px}.brand-mark{flex-basis:80px;width:80px;height:80px}}
