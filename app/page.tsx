@@ -13,6 +13,7 @@ export default function Home() {
         </nav>
         <div className="nav-actions"><a className="text-link" href="/login/">Login</a><a className="button small" href="/register/">Register <span>↗</span></a></div>
       </header>
+      <div className="reading-rule" aria-hidden="true"><span /></div>
 
       <section className="hero" id="top">
         <div className="hero-copy reveal">
@@ -30,6 +31,15 @@ export default function Home() {
         </div>
       </section>
       <div className="logo-strip"><span>Built for the documents others can’t read</span><b>LOW-QUALITY SCANS</b><b>HANDWRITING</b><b>MIXED SCRIPTS</b><b>LEGACY ARCHIVES</b></div>
+
+      <section className="section specimens" aria-labelledby="specimen-title">
+        <div className="section-heading"><p className="kicker">Document Specimens</p><h2 id="specimen-title">From difficult pages to <em>dependable data.</em></h2><p>See how Keppler handles the formats where generic OCR breaks down: imperfect scans, handwriting, complex tables, and mixed scripts.</p></div>
+        <div className="specimen-grid">
+          <article className="specimen-card manuscript"><div className="specimen-meta"><span>SPECIMEN 01</span><b>Legacy records</b></div><div className="manuscript-lines"><i/><i/><i/><i/><i/></div><div className="margin-note">low contrast<br/>restored</div><p>Low-quality scans</p></article>
+          <article className="specimen-card ledger"><div className="specimen-meta"><span>SPECIMEN 02</span><b>Field ledger</b></div><div className="ledger-grid"><i/><i/><i/><i/><i/><i/><i/><i/><i/></div><div className="stamp">TABLE<br/>FOUND</div><p>Tables & fields</p></article>
+          <article className="specimen-card scripts"><div className="specimen-meta"><span>SPECIMEN 03</span><b>Language plate</b></div><div className="script-lines"><b>हिन्दी</b><b>తెలుగు</b><b>தமிழ்</b><b>العربية</b></div><div className="proof-mark">mixed script<br/>verified</div><p>Multilingual pages</p></article>
+        </div>
+      </section>
 
       <section className="section intro" id="capabilities">
         <div className="section-heading">
@@ -72,6 +82,18 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section process" aria-labelledby="process-title">
+        <div className="section-heading center-heading"><p className="kicker">The Keppler Method</p><h2 id="process-title">A scientific workflow for <em>every document.</em></h2><p>One clear path from an archival original to an output your systems can use.</p></div>
+        <div className="process-steps">
+          {[
+            ['I','Scan','Ingest PDFs, images, photos, and difficult legacy material.'],
+            ['II','Recognize','Read multilingual, handwritten, and low-quality pages with AI-trained models.'],
+            ['III','Structure','Preserve tables, fields, relationships, and document context.'],
+            ['IV','Deliver','Send trustworthy JSON, CSV, XML, batch, or real-time outputs.']
+          ].map(([number,title,copy])=><article key={title}><span className="process-number">{number}</span><span className="process-node">✦</span><h3>{title}</h3><p>{copy}</p></article>)}
+        </div>
+      </section>
+
       <section className="section industries" id="industries">
         <div className="section-heading"><p className="kicker">Industries & Use Cases</p><h2>Built for teams who need <em>accuracy, scale, and compliance.</em></h2></div>
         <div className="industry-list">
@@ -83,6 +105,15 @@ export default function Home() {
             ['05','Oil & Gas','Extract technical logs, reports, and legacy field data.','Logs · Field reports'],
             ['06','Enterprise ops','Standardize document processing across teams and regions.','Forms · Operations']
           ].map(([n,title,copy,tags])=><article key={title}><span>{n}</span><h3>{title}</h3><p>{copy}</p><small>{tags}</small><b>↗</b></article>)}
+        </div>
+      </section>
+
+      <section className="section case-studies" aria-labelledby="case-study-title">
+        <div className="section-heading split"><div><p className="kicker">Archive Notes</p><h2 id="case-study-title">Enterprise complexity, <em>made legible.</em></h2></div><p>A record of the document work Keppler is designed to make easier: accurate, scalable, and ready for regulated environments.</p></div>
+        <div className="case-grid">
+          <article><span className="case-seal">GOV</span><p className="case-index">CASE FILE 01 / PUBLIC RECORDS</p><h3>From archive shelf to searchable record.</h3><p>Digitize legacy citizen records and archives at speed while preserving essential fields and context.</p><small>Government · Legacy archives</small></article>
+          <article><span className="case-seal">BFSI</span><p className="case-index">CASE FILE 02 / REGULATED FORMS</p><h3>Audit-ready data from every critical page.</h3><p>Automate KYC, forms, and statements with the traceability demanded by banking and BFSI teams.</p><small>Banking · KYC · Statements</small></article>
+          <article><span className="case-seal">HLTH</span><p className="case-index">CASE FILE 03 / CLINICAL MATERIAL</p><h3>Make sensitive medical material usable.</h3><p>Process records, prescriptions, and EMR ingestion securely across complex and handwritten inputs.</p><small>Healthcare · Prescriptions · EMR</small></article>
         </div>
       </section>
 
