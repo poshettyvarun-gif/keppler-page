@@ -1,5 +1,5 @@
 const Logo = () => (
-  <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
+  <span className="brand-mark"><img src="/images/keppler-logo.jpg" alt="Keppler logo" /></span>
 );
 
 export default function Home() {
