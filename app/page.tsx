@@ -1,12 +1,17 @@
-const Logo = () => (
-  <span className="brand-mark"><img src="/images/keppler-logo.jpg" alt="Keppler logo" /></span>
+const Logo = ({ transparent = false }: { transparent?: boolean }) => (
+  <span className="brand-mark">
+    <img
+      src={transparent ? "/images/keppler-logo-transparent.png" : "/images/keppler-logo.jpg"}
+      alt="Keppler logo"
+    />
+  </span>
 );
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Keppler OCR home"><Logo /></a>
+          <a className="brand" href="#top" aria-label="Keppler OCR home"><Logo transparent /></a>
         <nav aria-label="Primary navigation">
           <a href="#capabilities">Platform</a><a href="#languages">Language Support</a><a href="#industries">Industries &amp; Use Cases</a>
           <a href="#security">Security &amp; Compliance</a><a href="#contact">Contact</a><a href="/about-us/">About Us</a>
