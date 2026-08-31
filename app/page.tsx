@@ -22,16 +22,11 @@ export default function Home() {
           <div className="hero-actions"><a className="button" href="#contact">Request a Demo <span>↗</span></a><a className="button secondary" href="#capabilities">View Platform <span>↓</span></a></div>
           <div className="trust-row"><span>AI-trained, not rule-based</span><span>Enterprise-grade delivery</span><span>Cloud · On-prem · Hybrid</span></div>
         </div>
-        <div className="product-card reveal delay-1" aria-label="Keppler OCR processing preview">
-          <div className="window-bar"><span className="window-dots"><i/><i/><i/></span><b>Keppler OCR</b><span className="live"><i/> Engine live</span></div>
-          <div className="doc-surface">
-            <div className="doc-head"><span className="file-icon">▤</span><div><b>Multilingual document</b><small>legacy_register_scan.pdf</small></div><span className="status">Processing</span></div>
-            <div className="scan-lines"><i/><i/><i/><i/><i/></div>
-            <div className="language-tags"><span>हिन्दी</span><span>తెలుగు</span><span>English</span><span>தமிழ்</span></div>
-          </div>
-          <div className="metrics"><div><small>OUTPUT</small><b>JSON · CSV · XML</b></div><div><small>MODES</small><b>Batch · Real-time</b></div><div><small>SECURITY</small><b>Encrypted</b></div></div>
+        <div className="archive-hero reveal delay-1" aria-label="Keppler OCR processing a historical multilingual document">
+          <img src="/images/keppler-archival-hero.png" alt="Open archival book being scanned and converted into structured data" />
+          <div className="scan-label"><span>KEPPLER FIELD SCAN</span><b>01</b><small>DOCUMENT → DATA</small></div>
           <div className="float-card accuracy"><span>98.6%</span><small>field confidence</small></div>
-          <div className="float-card structured"><span>✓</span><small>Tables structured</small></div>
+          <div className="float-card structured"><span>✦</span><small>Tables structured</small></div>
         </div>
       </section>
       <div className="logo-strip"><span>Built for the documents others can’t read</span><b>LOW-QUALITY SCANS</b><b>HANDWRITING</b><b>MIXED SCRIPTS</b><b>LEGACY ARCHIVES</b></div>
