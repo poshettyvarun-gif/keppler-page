@@ -1,7 +1,7 @@
-const Logo = ({ transparent = false }: { transparent?: boolean }) => (
+const Logo = () => (
   <span className="brand-mark">
     <img
-      src={transparent ? "/images/keppler-logo-transparent.png" : "/images/keppler-logo.jpg"}
+      src="/images/keppler-logo-final-transparent.png"
       alt="Keppler logo"
     />
   </span>
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-          <a className="brand" href="#top" aria-label="Keppler OCR home"><Logo transparent /></a>
+          <a className="brand" href="#top" aria-label="Keppler OCR home"><Logo /></a>
         <nav aria-label="Primary navigation">
           <a href="#capabilities">Platform</a><a href="#languages">Language Support</a><a href="#industries">Industries &amp; Use Cases</a>
           <a href="#security">Security &amp; Compliance</a><a href="#contact">Contact</a><a href="/about-us/">About Us</a>
@@ -155,7 +155,7 @@ export default function Home() {
         <form className="contact-form" action="mailto:info@thekeppler.com" method="post" encType="text/plain"><h3>Send us a message</h3><label>Full Name<input name="name" required /></label><label>Email Address<input type="email" name="email" required /></label><label>Subject<input name="subject" required /></label><label>Your Message<textarea name="message" rows={5} required /></label><button className="button" type="submit">Send Message <span>↗</span></button></form>
       </section>
 
-      <footer><div className="footer-top"><div className="footer-brand"><a className="brand" href="#top"><Logo transparent /></a><p>Multilingual AI OCR engine that reads anything, in any language, at enterprise scale.</p></div><div><h3>Platform</h3><a href="#capabilities">Capabilities</a><a href="#languages">Language Support</a><a href="#security">Security & Compliance</a></div><div><h3>Company</h3><a href="/about-us">About Us</a><a href="#contact">Contact</a><a href="https://kalpratech.com/careers/">Careers ↗</a></div><div><h3>Developers</h3><span>API Docs</span><span>SDKs</span><a href="/contact-us">Talk to Experts</a></div></div><div className="footer-bottom"><span>© 2025 Keppler OCR. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer><div className="footer-top"><div className="footer-brand"><a className="brand" href="#top"><Logo /></a><p>Multilingual AI OCR engine that reads anything, in any language, at enterprise scale.</p></div><div><h3>Platform</h3><a href="#capabilities">Capabilities</a><a href="#languages">Language Support</a><a href="#security">Security & Compliance</a></div><div><h3>Company</h3><a href="/about-us">About Us</a><a href="#contact">Contact</a><a href="https://kalpratech.com/careers/">Careers ↗</a></div><div><h3>Developers</h3><span>API Docs</span><span>SDKs</span><a href="/contact-us">Talk to Experts</a></div></div><div className="footer-bottom"><span>© 2025 Keppler OCR. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
   );
 }

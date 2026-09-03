@@ -51,3 +51,10 @@
 .contact .contact-form:after{content:"KEPPLER OCR"}
 .intro:after,.industries:after{content:"KEPPLER OCR"}
 .language-visual:before{content:"SUPPORTED LANGUAGES"}
+
+/* A subtle edge shadow keeps the supplied light wordmark legible on the parchment navbar. */
+.brand-mark img{filter:drop-shadow(0 1px 1px rgba(44,30,18,.45))}
+
+/* The supplied visual mark is paired with a restrained archival wordmark. */
+.brand-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.brand-mark img{height:100%;object-fit:contain}
