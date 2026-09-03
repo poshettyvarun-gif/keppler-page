@@ -1,5 +1,5 @@
 const Logo = ({ transparent = false }: { transparent?: boolean }) => (
-  <span className="brand-mark logo-3d">
+  <span className="brand-mark">
     <img
       src={transparent ? "/images/keppler-logo-transparent.png" : "/images/keppler-logo.jpg"}
       alt="Keppler logo"
