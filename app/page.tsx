@@ -142,10 +142,6 @@ export default function Home() {
       <section className="section choose-cta">
         <div className="section-heading"><p className="kicker">Why Enterprises Choose Keppler</p><h2>Superior multilingual accuracy with an <em>API-first design</em> and enterprise security.</h2><p>Strong Indian language OCR, scalable processing, and flexible deployments give teams the control they need.</p></div>
         <div className="pill-row"><span>Multilingual accuracy</span><span>API-first architecture</span><span>Indian language strength</span><span>Enterprise security</span><span>Batch & real-time</span></div>
-        <div className="cta-inline">
-          <div><h3>Get started with <em>Keppler.</em></h3><p>Request a demo, talk to our OCR experts, or pilot Keppler on your data. Enterprise-grade OCR that is ready for production.</p></div>
-          <div className="cta-actions"><a className="button" href="#contact">Request Demo <span>↗</span></a><a className="button secondary" href="/register/">Start a Pilot <span>→</span></a><a className="button secondary" href="#contact">Get in Touch <span>→</span></a></div>
-        </div>
       </section>
 
       <section className="section contact" id="contact">
