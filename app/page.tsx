@@ -146,7 +146,16 @@ export default function Home() {
 
       <section className="section contact" id="contact">
         <div className="contact-info"><p className="kicker">Get in Touch</p><h2>Let’s make your documents <em>useful.</em></h2><p>Tell us what you’re processing and where the complexity lies. Our OCR experts will help you find the right path.</p><a href="mailto:info@thekeppler.com" className="email-link">info@thekeppler.com <span>↗</span></a>
-          <div className="address-grid"><address><b>USA</b>13111 Westheimer Rd., Suite 311<br/>Houston, TX, 77077</address><address><b>Nearshore Development Centre</b>Golden Triangle Mall, Ironshore, ST James<br/>Montego Bay, Jamaica</address><address><b>Offshore Development Centre</b>H No: 3-2-25/A Chaithnyapuri Enclave Colony<br/>Manikonda, Hyderabad, Telangana, 500089</address><address><b>Offshore Operations Centre</b>4th Floor, 2VRG+C9F IT Hub<br/>Siddipet, Nancharpally, Telangana 502277</address></div>
+          <div className="address-grid">
+            {[
+              ['USA','13111 Westheimer Rd., Suite 311','Houston, TX, 77077'],
+              ['Nearshore Development Centre','Golden Triangle Mall, Ironshore, ST James','Montego Bay, Jamaica'],
+              ['Offshore Development Centre','H No: 3-2-25/A Chaithnyapuri Enclave Colony','Manikonda, Hyderabad, Telangana, 500089'],
+              ['Offshore Operations Centre','4th Floor, 2VRG+C9F IT Hub','Siddipet, Nancharpally, Telangana 502277'],
+            ].map(([name, l1, l2], i) => (
+              <address key={name}><span>0{i + 1}</span><b>{name}</b>{l1}<br />{l2}</address>
+            ))}
+          </div>
         </div>
         <form className="contact-form" action="mailto:info@thekeppler.com" method="post" encType="text/plain"><h3>Send us a message</h3><label>Full Name<input name="name" placeholder="Your full name" required /></label><label>Email Address<input type="email" name="email" placeholder="you@company.com" required /></label><label>Subject<input name="subject" placeholder="How can we help?" required /></label><label>Your Message<textarea name="message" placeholder="Tell us about your documents..." rows={5} required /></label><button className="button" type="submit">Send Message <span>↗</span></button></form>
       </section>

@@ -198,9 +198,14 @@ h1 em,.section h2 em{font-style:normal;color:var(--red)}
 .contact{display:grid;grid-template-columns:1.05fr .75fr;gap:8vw;background:var(--paper)}
 .contact-info>p:nth-of-type(2){color:var(--charcoal);line-height:1.7;font-size:17px;font-weight:600}
 .email-link{display:inline-flex;gap:10px;align-items:center;margin:20px 0 35px;padding-bottom:4px;border-bottom:1px solid var(--ink);color:var(--ink);text-decoration:none;font-family:var(--mono);font-size:15.5px;font-weight:700}
-.address-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.address-grid address{color:var(--muted);font-size:14.5px;font-weight:600;line-height:1.6;font-style:normal}
-.address-grid b{display:block;color:var(--ink);margin-bottom:5px;font-family:var(--mono);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.address-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.address-grid address{color:var(--muted);font-size:13.5px;font-weight:600;line-height:1.55;font-style:normal;position:relative;padding:20px 18px 18px;border:1px solid var(--line-strong);border-left:3px solid var(--blue);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.address-grid address:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.address-grid address:nth-child(2){border-left-color:var(--red)}
+.address-grid address:nth-child(3){border-left-color:var(--green)}
+.address-grid address:nth-child(4){border-left-color:var(--blue)}
+.address-grid address>span{display:block;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--muted);margin-bottom:10px}
+.address-grid b{display:block;color:var(--ink);margin-bottom:6px;font-size:13.5px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
 .contact-form{padding:32px}
 .contact-form h3{font-size:19px;font-weight:600;margin:0 0 20px}
 .contact-form label{display:flex;flex-direction:column;gap:7px;font-family:var(--mono);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin-bottom:14px}
